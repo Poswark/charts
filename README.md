@@ -1,5 +1,7 @@
 # charts
 
+ https://poswark.github.io/charts/
+
 # Crear hello
 helm create hello
 
@@ -21,3 +23,17 @@ Successfully packaged chart and saved it to: /Users/giovannyorjuelamelo/Document
 
 ## Crear repo 
  % helm repo index .
+
+## add repo helm 
+ % helm repo add poswark  https://poswark.github.io/charts/
+"poswark" has been added to your repositories
+
+##  buscar repo
+% helm search repo hello
+NAME            CHART VERSION   APP VERSION     DESCRIPTION                
+poswark/hello   0.1.0           1.16.0          A Helm chart for Kubernetes
+
+## Funciona 
+ helm install --dry-run hello poswark/hello
+
+ 
